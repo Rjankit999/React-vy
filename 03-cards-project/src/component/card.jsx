@@ -1,26 +1,29 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
+  console.log(props);
+  console.log(props.name);
+  
   return (
     <div className="card">
         <div className="top">
-          <img src="https://images.seeklogo.com/logo-png/29/2/amazon-icon-logo-png_seeklogo-297884.png" alt="" />
+          <img src={props.logo} alt="" />
           <button>Save<i class="ri-bookmark-line"></i></button>
         </div>
 
         <div className="center">
-          <h4>Amazon <span>5 days ago</span></h4>
-          <h3>Senior UI/UX Designer</h3>
+          <h4>{props.company} <span>{props.date}</span></h4>
+          <h3>{props.post}r</h3>
           <div className="part-time">
-            <h4>Part-Time</h4>
-            <h4>Senior Lacel</h4>
+            <h4>{props.tag1}</h4>
+            <h4>{props.tag2}</h4>
           </div>
         </div>
 
         <div className="buttom">
           <div className="contant">
-            <h1>$120</h1>
-            <p>Mumbai India</p>
+            <h1>{props.pay}</h1>
+            <p>{props.location}</p>
           </div>
           <div className="btn">
             <button>Apply now</button>
