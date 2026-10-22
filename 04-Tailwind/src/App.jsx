@@ -1,10 +1,12 @@
 import React from 'react'
+import section1 from './component/Section1/section1'
+import section2 from './component/Section2/section2'
 
 const App = () => {
   return (
-    <div className='h-screen bg-gray-900'>
-      
- 
+    <div>
+      <section1/>
+      <section2/>
     </div>
   )
 }
