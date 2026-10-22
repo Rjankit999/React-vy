@@ -1,12 +1,15 @@
 import React from 'react'
-import Section1 from './component/Section1/section1'
-import Section2 from './component/Section2/section2'
+import Navebar from './component/Section1/navebar'
+import Page1Contant from './component/Section1/page1contant'
+
+
 
 const App = () => {
   return (
     <div>
-      <Section1/>
-      <Section2/>
+      <Navebar/>
+      <Page1Contant/>
+      
       
     </div>
   )
