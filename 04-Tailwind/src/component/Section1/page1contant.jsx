@@ -3,9 +3,11 @@ import Rightcontant from "./Rightcontant"
 
 const page1contant = () => {
   return (
-    <div className="py-10 px-18 h-[90vh] gap-10 bg-amber-950 flex justify-between ">
+    <div className="py-10 px-18 h-[90vh] gap-10 flex justify-between ">
 
     <LeftContant/>
+    <Rightcontant/>
+    <Rightcontant/>
     <Rightcontant/>
     </div>
   )
